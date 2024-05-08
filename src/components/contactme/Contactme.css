@@ -1,4 +1,101 @@
-#contactme{
-    height: 100dvh;
-    background-color: #f5f5f5;
+/* Equivalent CSS for Bootstrap classes */
+
+/* Container */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Columns */
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-12 {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Text Center */
+.text-center {
+    text-align: center;
+}
+
+/* Margin Bottom */
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+/* Margin Top */
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+/* Padding */
+.p-md-5 {
+    padding: 3.125rem !important;
+}
+
+.p-4 {
+    padding: 1.25rem !important;
+}
+
+/* Font Size */
+.heading-section {
+    font-size: 2.25rem;
+}
+
+/* Border Radius */
+.w-100 {
+    width: 100% !important;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
 }

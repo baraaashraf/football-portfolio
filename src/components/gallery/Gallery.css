@@ -1,7 +1,8 @@
 #gallery {
   height: 100dvh;
   background-color: #eee;
-  padding: 0.5rem;
+  padding: 1.5rem;
+  backdrop-filter: blur(15px);
 }
 
 .slider {
