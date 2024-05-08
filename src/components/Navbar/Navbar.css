@@ -1,0 +1,117 @@
+:root {
+  --mainColor: #040404;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #7f591c;
+  --textColor: #dbd8cf;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8dvh;
+  padding: 0 2rem;
+  background-color: #eee;
+  color: var(--textColor);
+}
+
+.navbar-logo {
+  color: #7f591c;
+  font-size: 1.5rem;
+}
+
+.navbar a {
+  margin: 0 1rem;
+  color: #040404;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--secondaryColor);
+}
+
+.nav-header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #040404;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+.nav-header .nav-btn:hover {
+  transform: translateY(-2px);
+}
+
+.nav-header div,
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-header .nav-btn {
+  display: none;
+}
+.book-now-nav {
+  display: block;
+  background-color: #7f591c;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.book-now-nav:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  .book-now-nav {
+    display: none;
+  }
+
+  .navbar {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    transition: 0.7s;
+    background-color: rgba(180, 180, 180, 0.4);
+    backdrop-filter: blur(15px);
+  }
+
+  .nav-header .show_nav {
+    transform: translateY(100vh);
+  }
+
+  .navbar .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .navbar a {
+    font-size: 1.5rem;
+  }
+  .navbar a:hover {
+    font-size: 1.6rem;
+  }
+}
