@@ -3,11 +3,11 @@ import "./Aboutme.css";
 const Aboutme = () => {
   return (
     <div id="aboutme">
-      <section class="section">
-        <div class="section__container">
-          <div class="content">
-            <p class="subtitle">HELLO</p>
-            <h1 class="title">
+      <section className="section">
+        <div className="section__container">
+          <div className="content">
+            <p className="subtitle">HELLO</p>
+            <h1 className="title">
               I'm{" "}
               <span>
                 Mahamoudou
@@ -15,18 +15,18 @@ const Aboutme = () => {
               </span>{" "}
               Football Coach
             </h1>
-            <p class="description">
+            <p className="description">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Recusandae inventore architecto in tempore quisquam qui
               necessitatibus esse placeat, omnis, harum dolorum sequi. Fugiat
               pariatur commodi aliquam sunt ipsa, quod quidem.
             </p>
-            <div class="action__btns">
-              <button class="hire__me">Book Me</button>
-              <button class="portfolio">Portfolio</button>
+            <div className="action__btns">
+              <button className="hire__me">Book Me</button>
+              <button className="portfolio">Portfolio</button>
             </div>
           </div>
-          <div class="image">
+          <div className="image">
             <img src="http://localhost:3000/img1.jpg" alt="profile" />
           </div>
         </div>
