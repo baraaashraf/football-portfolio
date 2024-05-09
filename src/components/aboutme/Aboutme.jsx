@@ -1,5 +1,6 @@
 import React from "react";
 import "./Aboutme.css";
+import img1 from '../../../public/img1.jpg'
 const Aboutme = () => {
   return (
     <div id="aboutme">
@@ -27,7 +28,7 @@ const Aboutme = () => {
             </div>
           </div>
           <div className="image">
-            <img src="http://localhost:3000/img1.jpg" alt="profile" />
+            <img src={img1} alt="profile" />
           </div>
         </div>
       </section>
