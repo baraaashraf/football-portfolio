@@ -146,21 +146,24 @@ footer {
 .socialIcons a {
   text-decoration: none;
   padding: 10px;
+  width: 52px;
   background-color: white;
   margin: 10px;
   border-radius: 100%;
 }
 .socialIcons a i {
-  font-size: 2em;
+  font-size: 1.5em;
   color: black;
   opacity: 0, 9;
+  margin: auto;
+  padding: 6px;
 }
 /* Hover affect on social media icon */
 .socialIcons a:hover {
   background-color: #111;
   opacity: 1;
   transition: 0.5s;
-  border: 1px solid #7f591c;
+  box-shadow: #7f591c;
 }
 .socialIcons a:hover i {
   color: #7f591c;
@@ -172,6 +175,7 @@ footer {
 .footerNav ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   list-style-type: none;
 }
 .footerNav ul li a {

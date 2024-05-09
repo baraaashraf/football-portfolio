@@ -50,26 +50,29 @@ const careerPoints = [
 
 const Career = () => {
   return (
-    <div id="career">
-      <div className="wrapper">
-        {careerPoints.map((point, index) => (
-          <div key={index} className="career-container">
-            <div className="career-container-title">
-              <FontAwesomeIcon className="career-icon" icon={point.icon} />
+    <>
+      <div id="career">
+        <h2 className="career-title">Career</h2>
+        <div className="wrapper">
+          {careerPoints.map((point, index) => (
+            <div key={index} className="career-container">
+              <div className="career-container-title">
+                <FontAwesomeIcon className="career-icon" icon={point.icon} />
 
-              <span className="num">{point.Title}</span>
+                <span className="num">{point.Title}</span>
+              </div>
+              <ul className="text">
+                {point.desc.map((item, index) => (
+                  <li className="career-point" key={index}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <ul className="text">
-              {point.desc.map((item, index) => (
-                <li className="career-point" key={index}>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
