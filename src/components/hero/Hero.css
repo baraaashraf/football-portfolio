@@ -6,6 +6,7 @@
   background-size: cover;
   background-position: center;
   height: 92dvh;
+  animation: slideUp 0.7s linear forwards;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -21,6 +22,7 @@
   height: 100%;
   justify-content: space-between;
   margin: 0 auto;
+  animation: slideUp 0.9s linear forwards;
 }
 
 .hero-text-left {
@@ -93,7 +95,7 @@
     font-size: 2rem;
   }
 }
-@media (max-width: 428px) {
+@media (max-width: 480px) {
   nav ul {
     display: none;
   }
@@ -115,4 +117,15 @@
     font-size: 1.2rem;
   }
   
+}
+
+@keyframes slideUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }

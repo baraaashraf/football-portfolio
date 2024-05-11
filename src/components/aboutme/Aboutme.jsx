@@ -1,6 +1,6 @@
 import React from "react";
 import "./Aboutme.css";
-import img1 from '../../../public/img1.jpg'
+import img1 from '../../assets/images/img1.jpg'
 const Aboutme = () => {
   return (
     <div id="aboutme">
