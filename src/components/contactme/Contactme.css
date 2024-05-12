@@ -183,7 +183,7 @@ footer {
   align-items: center;
   list-style-type: none;
 }
-.footerNav ul li a {
+.footerNav ul li span {
   color: white;
   margin: 20px;
   text-decoration: none;

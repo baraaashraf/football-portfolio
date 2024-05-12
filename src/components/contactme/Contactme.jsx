@@ -8,10 +8,47 @@ import {
   faTiktok,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLocationDot,
+  faEnvelope,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 const Contactme = () => {
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
+  };
+  const config = {
+    Host: "smtp.elasticemail.com",
+    Username: "username",
+    Password: "password",
+    To: "them@website.com",
+    From: "you@isp.com",
+    Subject: "This is the subject",
+    Body: "And this is the body",
+  };
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    const config = {
+      Host: "smtp.elasticemail.com",
+      Username: "username",
+      Password: "password",
+      To: "them@website.com",
+      From: formData.email,
+      Subject: formData.message,
+      Body: "And this is the body",
+    };
+    if (window.Email) {
+      window.Email.send(config);
+    }
+    console.log(config);
+    console.log("FormData", formData);
   };
   return (
     <div id="contactme">
@@ -28,34 +65,42 @@ const Contactme = () => {
           </div>
           <div className="contact-box-right">
             <h2>Contact Me</h2>
-            <input
-              type="text"
-              name="name"
-              className="field"
-              placeholder="Your Name"
-              onChange={handleChange}
-            />
-            <input
-              type="text"
-              name="email"
-              className="field"
-              placeholder="Your Email"
-              onChange={handleChange}
-            />
-            <input
-              type="text"
-              name="phone"
-              className="field"
-              placeholder="Phone"
-              onChange={handleChange}
-            />
-            <textarea
-              placeholder="Message"
-              name="message"
-              className="field"
-              onChange={handleChange}
-            ></textarea>
-            <button className="contact-btn">Send</button>
+            <form onSubmit={submitHandler}>
+              <input
+                type="text"
+                name="name"
+                value={formData.name || ""}
+                className="field"
+                placeholder="Your Name"
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                name="email"
+                value={formData.email || ""}
+                className="field"
+                placeholder="Your Email"
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                name="subject"
+                value={formData.subject || ""}
+                className="field"
+                placeholder="Subject"
+                onChange={handleChange}
+              />
+              <textarea
+                placeholder="Message"
+                name="message"
+                value={formData.message || ""}
+                className="field"
+                onChange={handleChange}
+              ></textarea>
+              <button type="submit" className="contact-btn">
+                Send
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -92,13 +137,20 @@ const Contactme = () => {
           <div className="footerNav">
             <ul>
               <li>
-                <a href="#">Home</a>
+                <span>
+                  <FontAwesomeIcon icon={faEnvelope} /> war.mou.soccer@gmail.com
+                </span>
               </li>
               <li>
-                <a href="#aboutme">About</a>
+                <span>
+                  <FontAwesomeIcon icon={faPhone} /> (424)603-985
+                </span>
               </li>
               <li>
-                <a href="#contactme">Contact Us</a>
+                <span>
+                  <FontAwesomeIcon icon={faLocationDot} /> Tellefosn park 11057
+                  Washingtion Pl,Culver City,CA 90232
+                </span>
               </li>
             </ul>
           </div>
