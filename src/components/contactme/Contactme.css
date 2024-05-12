@@ -110,7 +110,9 @@ textarea {
   border: 0px;
   border-radius: 10px;
   width: 100%;
-  height: 100%;
+  height: 350px;
+  margin-right: 20px;
+  padding-right: 10px;
 }
 
 @media screen and (max-width: 880px) {
@@ -122,6 +124,9 @@ textarea {
   }
   .contact-left {
     height: 200px;
+  }
+  .map{
+    width: 100%;
   }
 }
 @media screen and (max-width: 880px) {

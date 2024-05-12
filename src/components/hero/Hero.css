@@ -74,7 +74,17 @@
   cursor: pointer; 
 }
 
+
+
+
 /* Media queries */
+
+
+@media (min-width: 800px) {
+  .book-now{
+    display: none;
+  }
+}
 
 @media (max-width: 884px) {
   .container {

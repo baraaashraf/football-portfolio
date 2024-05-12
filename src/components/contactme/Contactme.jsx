@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import "./Contactme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,6 +9,10 @@ import {
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 const Contactme = () => {
+  const [formData, setFormData] = useState({});
+  const handleChange = (event) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+  };
   return (
     <div id="contactme">
       <div className="contact-container">
@@ -24,10 +28,33 @@ const Contactme = () => {
           </div>
           <div className="contact-box-right">
             <h2>Contact Me</h2>
-            <input type="text" className="field" placeholder="Your Name" />
-            <input type="text" className="field" placeholder="Your Email" />
-            <input type="text" className="field" placeholder="Phone" />
-            <textarea placeholder="Message" className="field"></textarea>
+            <input
+              type="text"
+              name="name"
+              className="field"
+              placeholder="Your Name"
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="email"
+              className="field"
+              placeholder="Your Email"
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="phone"
+              className="field"
+              placeholder="Phone"
+              onChange={handleChange}
+            />
+            <textarea
+              placeholder="Message"
+              name="message"
+              className="field"
+              onChange={handleChange}
+            ></textarea>
             <button className="contact-btn">Send</button>
           </div>
         </div>
@@ -65,13 +92,13 @@ const Contactme = () => {
           <div className="footerNav">
             <ul>
               <li>
-                <a href="">Home</a>
+                <a href="#">Home</a>
               </li>
               <li>
-                <a href="">About</a>
+                <a href="#aboutme">About</a>
               </li>
               <li>
-                <a href="">Contact Us</a>
+                <a href="#contactme">Contact Us</a>
               </li>
             </ul>
           </div>

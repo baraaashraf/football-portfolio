@@ -1,6 +1,8 @@
 import React from "react";
 import "./Aboutme.css";
-import img1 from '../../assets/images/img1.jpg'
+import img1 from "../../assets/images/img1.jpg";
+import { PopupButton } from "react-calendly";
+
 const Aboutme = () => {
   return (
     <div id="aboutme">
@@ -12,7 +14,8 @@ const Aboutme = () => {
               I'm{" "}
               <span>
                 Mahamoudou
-                <br />your
+                <br />
+                your
               </span>{" "}
               Football Coach
             </h1>
@@ -23,7 +26,12 @@ const Aboutme = () => {
               pariatur commodi aliquam sunt ipsa, quod quidem.
             </p>
             <div className="action__btns">
-              <button className="hire__me">Book Me</button>
+              <PopupButton
+                url="https://calendly.com/baraaashraf/30min"
+                className="hire__me"
+                rootElement={document.getElementById("root")}
+                text="Book Now!"
+              />
               <button className="portfolio">Portfolio</button>
             </div>
           </div>

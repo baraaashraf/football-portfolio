@@ -1,5 +1,7 @@
 import React from "react";
 import HeroImage from "../../assets/images/img3.jpg";
+import { PopupButton } from "react-calendly";
+
 import "./Hero.css";
 const Hero = () => {
   return (
@@ -16,7 +18,12 @@ const Hero = () => {
               odio dolorem totam, eaque adipisci praesentium hic sit, cupiditate
               repellendus mollitia
             </p>
-            <button className="book-now">Book Now</button>
+            <PopupButton
+              url="https://calendly.com/baraaashraf/30min"
+              className="book-now"
+              rootElement={document.getElementById("root")}
+              text="Book Now!"
+            />
           </div>
         </div>
       </div>

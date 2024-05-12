@@ -63,6 +63,7 @@
   padding: 8px 20px;
   border-radius: 20px;
   cursor: pointer;
+  border-style: none;
   text-decoration: none;
   color: white;
   transition: 0.3s;
