@@ -14,9 +14,7 @@ const Hero = () => {
           </div>
           <div className="hero-text-right">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
-              odio dolorem totam, eaque adipisci praesentium hic sit, cupiditate
-              repellendus mollitia
+            Master Your Skills: Soccer Training with a Pro Coach. Enhance Your Game with Tailored Techniques and Personalized Guidance. Level Up Your Performance on the Field.
             </p>
             <PopupButton
               url="https://calendly.com/mohamadoufootball/session"
