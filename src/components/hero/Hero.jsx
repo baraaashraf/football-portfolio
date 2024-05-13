@@ -19,7 +19,7 @@ const Hero = () => {
               repellendus mollitia
             </p>
             <PopupButton
-              url="https://calendly.com/baraaashraf/30min"
+              url="https://calendly.com/mohamadoufootball/session"
               className="book-now"
               rootElement={document.getElementById("root")}
               text="Book Now!"

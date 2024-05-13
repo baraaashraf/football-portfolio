@@ -65,7 +65,7 @@ const Contactme = () => {
           </div>
           <div className="contact-box-right">
             <h2>Contact Me</h2>
-            <form onSubmit={submitHandler}>
+            <form action="https://formsubmit.co/8a3ed0e6c877107e8c4a33ec2eadfabb" method="POST" >
               <input
                 type="text"
                 name="name"

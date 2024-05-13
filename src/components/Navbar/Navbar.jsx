@@ -38,7 +38,7 @@ const Navbar = () => {
       </button>
 
       <PopupButton
-        url="https://calendly.com/baraaashraf/30min"
+        url="https://calendly.com/mohamadoufootball/session"
         className="book-now-nav"
         rootElement={document.getElementById("root")}
         text="Book Now!"
