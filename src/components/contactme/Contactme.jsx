@@ -3,7 +3,6 @@ import "./Contactme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
-  faYoutube,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -161,8 +160,8 @@ const Contactme = () => {
         </div>
         <div className="footerBottom">
           <p>
-            Copyright &copy;2024; Designed by{" "}
-            <span className="designer">Baraa</span>
+            Copyright &copy;2024; Made by{" "}
+            <a href="https://github.com/baraaashraf" className="designer">Baraa</a>
           </p>
         </div>
       </footer>
