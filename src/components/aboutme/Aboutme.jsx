@@ -20,7 +20,13 @@ const Aboutme = () => {
               Football Coach
             </h1>
             <p className="description">
-            I'm a soccer trainer with 17 years of soccer experience focused on helping players refine their skills and reach their goals. My approach is simple: personalized attention, practical techniques, and consistent support. Whether you're just starting out or looking to sharpen your abilities, I'm here to provide guidance and motivation. Let's work together to enhance your game and achieve success on the field.
+              I'm a soccer trainer with 18 years of soccer experience focused on
+              helping players refine their skills and reach their goals. My
+              approach is simple: personalized attention, practical techniques,
+              and consistent support. Whether you're just starting out or
+              looking to sharpen your abilities, I'm here to provide guidance
+              and motivation. Let's work together to enhance your game and
+              achieve success on the field.
             </p>
             <div className="action__btns">
               <PopupButton
@@ -29,7 +35,13 @@ const Aboutme = () => {
                 rootElement={document.getElementById("root")}
                 text="Book Now!"
               />
-              <button className="portfolio">Portfolio</button>
+              <a
+              target="_blank"
+                className="portfolio"
+                href="https://www.transfermarkt.co.id/mouhamadou-war/profil/spieler/1127406"
+              >
+                Portfolio
+              </a>
             </div>
           </div>
           <div className="image">

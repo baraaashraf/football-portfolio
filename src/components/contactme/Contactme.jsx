@@ -2,16 +2,16 @@ import { useState } from "react";
 import "./Contactme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faTwitter,
   faInstagram,
   faYoutube,
   faTiktok,
-  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faLocationDot,
   faEnvelope,
   faPhone,
+  faJ,
+  faT,
 } from "@fortawesome/free-solid-svg-icons";
 const Contactme = () => {
   const [formData, setFormData] = useState({
@@ -65,7 +65,10 @@ const Contactme = () => {
           </div>
           <div className="contact-box-right">
             <h2>Contact Me</h2>
-            <form action="https://formsubmit.co/8a3ed0e6c877107e8c4a33ec2eadfabb" method="POST" >
+            <form
+              action="https://formsubmit.co/8a3ed0e6c877107e8c4a33ec2eadfabb"
+              method="POST"
+            >
               <input
                 type="text"
                 name="name"
@@ -108,29 +111,30 @@ const Contactme = () => {
       <footer>
         <div className="footerContainer">
           <div className="socialIcons">
-            <a href="">
+            <a
+              target="_blank"
+              href="https://www.jleague.co/players/6929/Mouhamadou-WAR/"
+            >
               <i>
-                <FontAwesomeIcon icon={faFacebook} />
+                <FontAwesomeIcon icon={faJ} />
               </i>
             </a>
-            <a href="">
+            <a target="_blank" href="https://www.instagram.com/mouwar/?hl=id">
               <i>
                 <FontAwesomeIcon icon={faInstagram} />
               </i>
             </a>
-            <a href="">
+            <a
+              target="_blank"
+              href="https://www.transfermarkt.co.id/mouhamadou-war/profil/spieler/1127406"
+            >
               <i>
-                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon icon={faT} />
               </i>
             </a>
-            <a href="">
+            <a target="_blank" href="">
               <i>
                 <FontAwesomeIcon icon={faTiktok} />
-              </i>
-            </a>
-            <a href="">
-              <i>
-                <FontAwesomeIcon icon={faYoutube} />
               </i>
             </a>
           </div>
