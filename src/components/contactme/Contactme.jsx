@@ -146,7 +146,7 @@ const Contactme = () => {
               </li>
               <li>
                 <span>
-                  <FontAwesomeIcon icon={faPhone} /> (424)603-985
+                  <FontAwesomeIcon icon={faPhone} /> 424-603-8985
                 </span>
               </li>
               <li>
