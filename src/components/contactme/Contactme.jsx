@@ -161,7 +161,7 @@ const Contactme = () => {
         <div className="footerBottom">
           <p>
             Copyright &copy;2024; Made by{" "}
-            <a href="https://github.com/baraaashraf" className="designer">Baraa</a>
+            <a href="https://github.com/bxra2" className="designer">Baraa</a>
           </p>
         </div>
       </footer>
