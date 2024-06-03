@@ -85,6 +85,10 @@ textarea {
   min-height: 150px;
 }
 
+.contact-box h2{
+  font-size: 3rem;
+}
+
 .contact-btn {
   width: 100%;
   padding: 0.5rem 1rem;

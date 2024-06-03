@@ -53,7 +53,7 @@ const Contactme = () => {
     <div id="contactme">
       <div className="contact-container">
         <div className="contact-box">
-          <div className="contact-box-left">
+          {/* <div className="contact-box-left">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.317869622275!2d-118.4122802!3d34.0100508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2ba3ecc38fc65%3A0x4eade98ecd756fc3!2sTellefson%20Park!5e0!3m2!1sid!2sid!4v1715252430595!5m2!1sid!2sid"
               className="map"
@@ -61,8 +61,7 @@ const Contactme = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-          </div>
-          <div className="contact-box-right">
+          </div> */}
             <h2>Contact Me</h2>
             <form
               action="https://formsubmit.co/8a3ed0e6c877107e8c4a33ec2eadfabb"
@@ -103,7 +102,6 @@ const Contactme = () => {
                 Send
               </button>
             </form>
-          </div>
         </div>
       </div>
 
@@ -131,11 +129,11 @@ const Contactme = () => {
                 <FontAwesomeIcon icon={faT} />
               </i>
             </a>
-            <a target="_blank" href="">
+            {/* <a target="_blank" href="">
               <i>
                 <FontAwesomeIcon icon={faTiktok} />
               </i>
-            </a>
+            </a> */}
           </div>
           <div className="footerNav">
             <ul>
@@ -149,12 +147,12 @@ const Contactme = () => {
                   <FontAwesomeIcon icon={faPhone} /> 424-603-8985
                 </span>
               </li>
-              <li>
+              {/* <li>
                 <span>
                   <FontAwesomeIcon icon={faLocationDot} /> Tellefosn park 11057
                   Washingtion Pl,Culver City,CA 90232
                 </span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
