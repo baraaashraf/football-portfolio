@@ -1,10 +1,7 @@
 import { useState } from "react";
 import "./Contactme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faTiktok,
-} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
 import {
   faLocationDot,
   faEnvelope,
@@ -22,33 +19,7 @@ const Contactme = () => {
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
-  const config = {
-    Host: "smtp.elasticemail.com",
-    Username: "username",
-    Password: "password",
-    To: "them@website.com",
-    From: "you@isp.com",
-    Subject: "This is the subject",
-    Body: "And this is the body",
-  };
 
-  const submitHandler = (e) => {
-    e.preventDefault();
-    const config = {
-      Host: "smtp.elasticemail.com",
-      Username: "username",
-      Password: "password",
-      To: "them@website.com",
-      From: formData.email,
-      Subject: formData.message,
-      Body: "And this is the body",
-    };
-    if (window.Email) {
-      window.Email.send(config);
-    }
-    console.log(config);
-    console.log("FormData", formData);
-  };
   return (
     <div id="contactme">
       <div className="contact-container">
@@ -62,46 +33,46 @@ const Contactme = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div> */}
-            <h2>Contact Me</h2>
-            <form
-              action="https://formsubmit.co/8a3ed0e6c877107e8c4a33ec2eadfabb"
-              method="POST"
-            >
-              <input
-                type="text"
-                name="name"
-                value={formData.name || ""}
-                className="field"
-                placeholder="Your Name"
-                onChange={handleChange}
-              />
-              <input
-                type="text"
-                name="email"
-                value={formData.email || ""}
-                className="field"
-                placeholder="Your Email"
-                onChange={handleChange}
-              />
-              <input
-                type="text"
-                name="subject"
-                value={formData.subject || ""}
-                className="field"
-                placeholder="Subject"
-                onChange={handleChange}
-              />
-              <textarea
-                placeholder="Message"
-                name="message"
-                value={formData.message || ""}
-                className="field"
-                onChange={handleChange}
-              ></textarea>
-              <button type="submit" className="contact-btn">
-                Send
-              </button>
-            </form>
+          <h2>Contact Me</h2>
+          <form
+            action="https://formsubmit.co/8a3ed0e6c877107e8c4a33ec2eadfabb"
+            method="POST"
+          >
+            <input
+              type="text"
+              name="name"
+              value={formData.name || ""}
+              className="field"
+              placeholder="Your Name"
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="email"
+              value={formData.email || ""}
+              className="field"
+              placeholder="Your Email"
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="subject"
+              value={formData.subject || ""}
+              className="field"
+              placeholder="Subject"
+              onChange={handleChange}
+            />
+            <textarea
+              placeholder="Message"
+              name="message"
+              value={formData.message || ""}
+              className="field"
+              onChange={handleChange}
+            ></textarea>
+            <button type="submit" className="contact-btn">
+              Send
+            </button>
+          </form>
         </div>
       </div>
 
@@ -159,7 +130,9 @@ const Contactme = () => {
         <div className="footerBottom">
           <p>
             Copyright &copy;2024; Made by{" "}
-            <a href="https://github.com/bxra2" className="designer">Baraa</a>
+            <a href="https://github.com/bxra2" className="designer">
+              Baraa
+            </a>
           </p>
         </div>
       </footer>

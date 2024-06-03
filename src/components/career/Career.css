@@ -54,7 +54,7 @@
   display: grid;
   place-items: center;
   font-weight: 600;
-  font-size: clamp(1.5rem, 1.6rem, 2.3rem);
+  font-size: 1.5rem;
 }
 .text {
   color: #e0e0e0;
@@ -63,13 +63,13 @@
   margin: 0 auto;
   pad: 0.7em 0;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.2;
 }
 .career-point {
   padding-bottom: 4px;
   margin: 5px;
   list-style: none;
-  font-size: clamp(1rem, 1.8vw, 1.1rem);
+  font-size: 1rem;
 }
 @keyframes fadeslide {
   from {
@@ -85,6 +85,12 @@
   .wrapper {
     gap: 15px;
   }
+  .career-point {
+    font-size: 1.5rem;
+  }
+  .num {
+    font-size: 2.5rem;
+  }
   .career-container {
     width: 100%;
     border-radius: 15px;
@@ -95,5 +101,11 @@
 @media screen and (max-width: 480px) {
   #career {
     margin-top: 60px;
+  }
+  .career-point {
+    font-size: 1rem;
+  }
+  .num {
+    font-size: 1.6rem;
   }
 }
